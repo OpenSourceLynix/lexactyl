@@ -23,7 +23,7 @@ module.exports.load = async function(app, db) {
         if (err) {
           console.log(`[${chalk.blue("WEBSITE")}] An error has occured on path ${req._parsedUrl.pathname}:`);
           console.log(err);
-          return res.send("An error has occured while attempting to load this page. Please contact an administrator to fix this.");
+          return res.send("An error has occured while attempting to load this page.");
         };
         return res.send(str);
       });
