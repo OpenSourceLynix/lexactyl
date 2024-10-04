@@ -41,7 +41,8 @@
         "couponrevokefailed": "/admin",
         "couponrevokesuccess": "/admin",
         "removeaccountfailed": "/admin",
-        "removeaccountsuccess": "/admin"
+        "removeaccountsuccess": "/admin",
+        "discord": "/discord"
     },
     "pages": {
         "mobile": "mobile.ejs",
@@ -54,6 +55,7 @@
         "admin": "admin.ejs",
         "store": "store.ejs",
         "afk": "afk.ejs"
+        "discord": "discord.ejs"
     },
     "mustbeloggedin": [
         "/projects",
@@ -63,7 +65,8 @@
         "/servers/edit",
         "/store",
         "/afk",
-        "/redeem"
+        "/redeem",
+        "/discord"
     ],
     "mustbeadmin": [
         "/admin"
