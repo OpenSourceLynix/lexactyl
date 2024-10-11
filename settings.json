@@ -1,5 +1,5 @@
 {
-  "version": "12.11.0",
+  "version": "12.11.1",
   "defaulttheme": "default",
   "website": {
     "port": 3001,
@@ -69,6 +69,7 @@
       },
       "oauth2": {
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
+        "provider": "discord",
         "id": "0000000000000000000",
         "secret": "secretHere",
         "link": "https://client.example.com",
