@@ -76,7 +76,7 @@ server {
 
 Without ssl
 
-```
+```Nginx
 server {
     listen 80;
     server_name <domain>;
