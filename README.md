@@ -1,5 +1,5 @@
 # Overview
-Lexactyl is an open-source pterodactyl management client area for with a clean good UI made in nodejs
+Lexactyl is an helictyl based open-source pterodactyl management client area for with a clean good UI made in nodejs
 
 ### Features
 Resource Management (Use it to create servers, edit them, etc.)
@@ -74,5 +74,30 @@ server {
 
 ```
 
+Without ssl
+
+```
+server {
+    listen 80;
+    server_name <domain>;
+
+    location /ws {
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection "upgrade";
+      proxy_pass "http://localhost:<port>/ws";
+    }
+
+    location / {
+      proxy_pass http://localhost:<port>/;
+      proxy_buffering off;
+      proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+```
+
 # License
 (c) 2024 Lynix and contributors. All rights reserved. Licensed under the MIT License.
+
+# Legacy Notice
+Lexactyl 12.z is no more managed shift to Lexactyl 13
