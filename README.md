@@ -1,3 +1,8 @@
+> [!NOTE]
+> We will be no more mainting Lexactyl we are working on more projects still you can use Lexactyl without restrictions 
+
+
+
 # Overview
 Lexactyl is an helictyl based open-source pterodactyl management client area for with a clean good UI made in nodejs
 
